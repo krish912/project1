@@ -14,3 +14,13 @@ code {
 html, body, .Login-component {
   height: 100%;
 }
+
+@media (max-width: 768px){
+  .text-on-image-left{
+    display: none
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
