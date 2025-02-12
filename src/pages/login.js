@@ -25,9 +25,7 @@ const Demo = () => {
     // const data = Object.fromEntries(formData);
     // JSON.stringify(setData({ ...data }));
     console.log(email,password);
-alert("working");
-    
-   };
+};
 
    function logn(){
     const requestOption={
@@ -106,7 +104,7 @@ alert("working");
         </Email>
       
         <Email visible={false} />  {/* hide default Email field */}
-        test444444444444 <Email id="ok" keyname="fields" index={1} placeholder="xsyz@gmail.com" onChange={(e)=>setemail(e.target.value)}/>
+        <Email id="ok" keyname="fields" index={1} placeholder="xsyz@gmail.com" onChange={(e)=>setemail(e.target.value)}/>
         <Password index={2} placeholder="Password" onChange={(e)=>setPassword(e.target.value)}/>
 
         <Footer>Not a member? <a href="#">Sign up now</a></Footer>       
@@ -114,7 +112,6 @@ alert("working");
 
         {/* <Email panel="signup" keyname="email" visible={false} />  */}
         <Email panel="signup"   type="email" placeholder="E-mail" keyname="e-mail"  visible={true} onChange={(e)=>setemail(e.target.value)}/>
-        <input visible={false}/>
         {/* <Username panel="signup" label="E-mail" type="email" placeholder="E-mail" keyname="e-mail" /> */}
         <Password panel="signup" placeholder="enter password" keyname="password" onChange={(e)=>setPassword(e.target.value)}/>
         <Password panel="signup" placeholder="Please confirm your password" keyname="confirm-password" onChange={(e)=>setconfpassword(e.target.value)} />

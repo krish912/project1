@@ -109,3 +109,22 @@
     margin-bottom: 20px;
   }
   
+form>div {
+  width: 100%;
+  float: left;
+}
+form>div>label {
+  float: left;
+  width: 10%;
+  padding-top: 8px;
+  text-align: right;
+}
+
+
+
+form>div>input {
+  float: left;
+  margin-left: 10px;
+  width: 80%;
+  border-radius: 7px !important;
+}

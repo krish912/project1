@@ -177,9 +177,9 @@ body {
   padding-bottom:.5% !important;
 }
 .offcanvas{
-  margin-top: 4.5% !important;
+  margin-top: 5.5% !important;
   margin-left: 80% !important;
-  height: 40% !important;
+  height: 45% !important;
   --bs-offcanvas-width: 300px !important;
 }
 .offcanvas-backdrop {
@@ -260,8 +260,12 @@ h2 {
   font-weight: 400;
   color: #333;
 }
-
-
+.pet-image-container{
+  width: 40%;
+}
+.account-logo:hover{
+  cursor: pointer;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

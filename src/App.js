@@ -2,19 +2,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
+import { AuthProvider } from './pages/AuthContext';
+
 import Home from './pages/home';
-import Contact from './pages/contact';
 import Demo from './pages/login';
-import { Dogs } from './pages/dogs';
-import ProductFilter from './pages/chatai';
-import { Title } from '@react-login-page/page10';
 import ProductList from './pages/productList';
 import AdoptionPage from './pages/adoptionPage';
-import { AuthProvider } from './pages/AuthContext';
 import PetForm from './pages/petForm';
-import Example from './pages/offcanva';
 import Header from './pages/header';
 import UploadPetDetails from './pages/UploadPetDetails';
+import AboutUs from './pages/about';
+import PetShopList from './pages/petShopList';
+import PetShopDetail from './pages/petshopDetails';
+import ContactOn from './pages/contactOnl';
 
 function App() {
   return (
@@ -25,14 +25,17 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/Dogs' element={<ProductList />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/about' element={<Dogs />} />
+            <Route path='/contact' element={<ContactOn/>} />
+            <Route path='/about' element={< AboutUs/>} />
             <Route path='/login' element={<Demo />} />
+          
 
             <Route path="/pets/:petId" element={<AdoptionPage />} />
             <Route path="/petform" element={<PetForm />} />
-            <Route path="/offcanva" element={< Example/>} />
+            {/* <Route path="/offcanva" element={< Example/>} /> */}
             <Route path="/upload-pet-details" element={<UploadPetDetails />} />
+            <Route path="/petShops" element={<PetShopList />} />
+            <Route path="/petShops/:shopId" element={<PetShopDetail />} />
             
           </Routes>
         </div>

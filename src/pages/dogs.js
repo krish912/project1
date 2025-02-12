@@ -1,4 +1,4 @@
-import dg1 from '../assets/images/dog1st.jpg'
+import dg1 from '../assets/images/dog1.jpg'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';

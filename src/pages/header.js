@@ -25,25 +25,26 @@ function Header() {
         <div>
             <Navbar expand="lg" className="bg-body-tertiary fixed-top" style={{ display: "flex" }}>
                 <Container>
-                    <h2>ADOPET</h2>
+                    <h1 >ADOPET</h1>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/Dogs">Dogs</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/" className="underline-hover">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/Dogs" className="underline-hover">Pets</Nav.Link>
+                            <Nav.Link as={Link} to="/petShops" className="underline-hover">PetShop</Nav.Link>
+                            <Nav.Link as={Link} to="/about" className="underline-hover">About</Nav.Link>
+                            <Nav.Link as={Link} to="/contact" className="underline-hover">Contact</Nav.Link>
                         </Nav>
                         <Nav className="justify-content-end">
                             {!isLoggedIn ? (
                                 <>
-                                    <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                                    <Nav.Link as={Link} to="/help">Help</Nav.Link>
+                                    <Nav.Link as={Link} to="/login" className="underline-hover">Login</Nav.Link>
+                                    <Nav.Link as={Link} to="/help" className="underline-hover">Help</Nav.Link>
                                 </>
                             ) : (
                                 <img src={accountLogo} alt="Account Logo" className="account-logo" style={{ width: '40px', height: '40px', borderRadius: '50%' }}  onClick={handleShow} />
                             )}
-                            <Button variant="link" style={{ color: "black" }} onClick={handleShow}>NGO</Button>
+                           
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -56,8 +57,8 @@ function Header() {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <p className="underline-hover" onClick={()=>navigate('/upload-pet-details')}>Add Pets</p>
-                    <p className="underline-hover">Personal Information</p>
+                    <p className="underline-hover" onClick={()=>navigate('/upload-pet-details')}>Add Pets</p><br/>
+                    <p className="underline-hover">Personal Information</p><br/>
                     <p className="underline-hover">Orders</p><br/>
                     <p className="underline-hover">Saved Items</p><br/>
                     <p className="underline-hover">Purchases</p><br/><r/><br/>
