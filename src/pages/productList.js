@@ -91,8 +91,10 @@ const ProductList = () => {
   };
 
   return (
-    <div className="product-list-container">
+    <div className="product-list-container" style={{ marginTop: '40px'}}>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    
       <div className="sidebar">
         <h3>Filter Options</h3>
         <div className="filters-container">
