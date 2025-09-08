@@ -19,7 +19,7 @@ const AdoptionPage = () => {
     const fetchPetDetails = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:8000/pets/${matches}`);
+        const response = await fetch(`https://adopet-nodework.onrender.com/pets/${matches}`);
         if (!response.ok) {
           throw new Error('Failed to fetch pet details');
         }
