@@ -23,7 +23,7 @@ const ProductList = () => {
   // }, []);
 
   useEffect(() => {
-    fetch("https://adopetbackend.onrender.com/dogsList")
+    fetch("https://adopet-nodework.onrender.com/dogsList")
       .then(response => response.json())
       .then(data => {
         setPets(data.message);
