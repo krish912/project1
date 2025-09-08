@@ -35,7 +35,7 @@ alert("working");
       headers:{'content-Type':'application/json'},
       body:JSON.stringify({email,password})
     };
-    const response= fetch('http://localhost:8000/getuserdata1',requestOption)
+    const response= fetch('https://adopet-nodework.onrender.com/getuserdata1',requestOption)
      .then(response=>response.json())
      .then(data=>{
       if (data && data.success) {
@@ -70,7 +70,7 @@ alert("working");
         headers:{'content-Type':'application/json'},
         body:JSON.stringify({email,password})
       };
-      fetch('http://localhost:8000/userData',requestOption)
+      fetch('https://adopet-nodework.onrender.com/userData',requestOption)
       .then(response=>response.json())
       .then(data=>{
         setData(data);
