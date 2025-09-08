@@ -138,8 +138,8 @@ const ProductList = () => {
                 <img src={pet.images} alt={pet.name} className="pet-image" />
                 <div className="pet-details">
                   <h3 className="pet-name">{pet.name}</h3>
-                  <p className="pet-type">{pet.type}</p>
-                  <p className="pet-breed">Breed: {pet.breed}</p>
+                  <p className="pet-type"><b>Type:</b>{pet.type}</p>
+                  <p className="pet-breed"><b>Breed:</b> {pet.breed}</p>
                   <p className="pet-age">{pet.age} years old</p>
                   <button className="adopt-button" onClick={() => handleAdoptNowClick(pet.id)}>Adopt Now</button>
                 </div>
