@@ -13,8 +13,17 @@ const ProductList = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/dogsList")
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       setPets(data.message);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
   useEffect(() => {
-    fetch("http://localhost:8000/dogsList")
+    fetch("https://adopetbackend.onrender.com/dogsList")
       .then(response => response.json())
       .then(data => {
         setPets(data.message);
